@@ -8,8 +8,8 @@
 #include "include/rectangle.h"
 #include "include/render.h"
 #include "include/player.h"
-#include "include/ball.h"
-#include "include/logsdlerror.h"
+#include "include/ballmanager.h"
+#include "include/logerror.h"
 #include "include/collision.h"
 #include "include/mapbrick.h"
 #include "include/brickmanager.h"
@@ -27,7 +27,7 @@ class MainGameState : public State {
     StateMachine  *stateMachine = nullptr;
     ButtonManager  buttonManager;
     Player         player;
-    Ball           ball;
+    BallManager    ballManager;
     Border         border;
     Collision      collision;
     MapBrick       mapBrick;
@@ -48,10 +48,10 @@ class MainGameState : public State {
 
     unsigned       width;
     unsigned       height;
-    bool           mouseLeftClick;
+    bool           touchClick;
     bool           exitGame;
     bool           winGame;
-    Vector2 <int>  mousePosition;
+    Vector2 <int>  touchPosition;
 
     void HandleEvent();
 public:

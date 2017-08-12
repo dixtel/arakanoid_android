@@ -2,17 +2,16 @@
 
 MainMenuState::MainMenuState(unsigned width, unsigned height, StateMachine *stateMachne, SDL_Renderer *ren) {
 
-    render = new Render(ren);
     this->stateMachine = stateMachne;
-
-    this->width    = width;
-    this->height   = height;
-    exitGame       = false;
-    mouseLeftClick = false;
+    this->width        = width;
+    this->height       = height;
+    render             = new Render(ren);
+    exitGame           = false;
+    touchClick        = false;
 
     if (!baseBackgroungImage.SetTexture("res/images/base_background.png", ren)) {
 
-        std::cout << "Error: cannor load res/images/background.png." << std::endl;
+        PrintError("Error: cannor load res/images/background.png");
     }
 
 
@@ -36,7 +35,8 @@ MainMenuState::~MainMenuState() {
 
 void MainMenuState::HandleEvent() {
 
-    mouseLeftClick = false;
+    touchClick = false;
+
     SDL_Event event;
 
     while (SDL_PollEvent(&event)) {
@@ -46,17 +46,18 @@ void MainMenuState::HandleEvent() {
             exitGame = true;
         }
 
-        if (event.type == SDL_MOUSEMOTION) {
+        if (event.type == SDL_FINGERMOTION) {
 
-            SDL_GetMouseState(&mousePosition.x, &mousePosition.y);
+            touchPosition.x = event.tfinger.x * width;
+            touchPosition.y = event.tfinger.y * height;
         }
 
-        if (event.type == SDL_MOUSEBUTTONDOWN) {
+        if (event.type == SDL_FINGERDOWN) {
 
-            if (event.button.button == SDL_BUTTON_LEFT) {
+            touchPosition.x = event.tfinger.x * width;
+            touchPosition.y = event.tfinger.y * height;
 
-                mouseLeftClick = true;
-            }
+            touchClick = true;
         }
 
     }
@@ -67,7 +68,7 @@ void MainMenuState::Update(float elapsedTime) {
 
     HandleEvent();
 
-    buttonManager.Update(mousePosition, mouseLeftClick);
+    buttonManager.Update(touchPosition, touchClick);
 
     if (buttonManager.IsLeftClick("Start")) {
 
@@ -95,12 +96,12 @@ void MainMenuState::OnEnter() {
 
     if (!buttonManager.CreateButton("Start", Vector2 <int> (80, 480), Vector2 <unsigned> (500, 100), "res/buttons/buttonStart.png", render->GetRenderer())) {
 
-        std::cout << "Cannot create Start button." << std::endl;
+        PrintError("Cannot create Start button.");
     }
 
     if (!buttonManager.CreateButton("Exit", Vector2 <int> (80, 630), Vector2 <unsigned> (500, 100), "res/buttons/buttonExit.png", render->GetRenderer())) {
 
-        std::cout << "Cannot create Exit button." << std::endl;
+        PrintError("Cannot create Exit button.");
     }
 }
 

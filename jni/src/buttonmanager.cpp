@@ -34,7 +34,7 @@ bool ButtonManager::CreateButton(std::string nameButton, Vector2 <int> positionB
 
     if (!button->SetTexture(buttonTexture, ren)) {
 
-        LogSDLError(std::cout, "SetTexture");
+        PrintError("SetTexture");
 
         delete button;
         button = nullptr;
@@ -105,4 +105,3 @@ std::vector <Rectangle*> &ButtonManager::GetButtons() {
 
     return bttns;
 }
-

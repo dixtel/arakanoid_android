@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a97d3fd9-61c6-46e7-bcf4-8452f2d071da" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jni/src/Game.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jni/src/include/logsdlerror.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/x86/libSDL2.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/x86/libSDL2_image.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/x86/libSDL2_ttf.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/x86/libgnustl_shared.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/x86/libmain.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/Game.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/Game.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/libSDL2.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/libSDL2_image.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/libSDL2_ttf.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/libgnustl_shared.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/libmain.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL_assert.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL_assert.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL_error.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL_error.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL_hints.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL_hints.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL_log.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/SDL_log.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/atomic/SDL_atomic.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/atomic/SDL_atomic.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/atomic/SDL_spinlock.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/atomic/SDL_spinlock.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_audio.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_audio.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_audiocvt.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_audiocvt.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_audiodev.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_audiodev.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_audiotypecvt.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_audiotypecvt.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_mixer.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_mixer.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_wave.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/SDL_wave.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/android/SDL_androidaudio.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/android/SDL_androidaudio.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/dummy/SDL_dummyaudio.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/audio/dummy/SDL_dummyaudio.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/core/android/SDL_android.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/core/android/SDL_android.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/cpuinfo/SDL_cpuinfo.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/cpuinfo/SDL_cpuinfo.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/dynapi/SDL_dynapi.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/dynapi/SDL_dynapi.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_clipboardevents.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_clipboardevents.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_dropevents.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_dropevents.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_events.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_events.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_gesture.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_gesture.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_keyboard.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_keyboard.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_mouse.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_mouse.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_quit.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_quit.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_touch.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_touch.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_windowevents.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/events/SDL_windowevents.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/file/SDL_rwops.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/file/SDL_rwops.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/filesystem/android/SDL_sysfilesystem.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/filesystem/android/SDL_sysfilesystem.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/haptic/SDL_haptic.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/haptic/SDL_haptic.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/haptic/dummy/SDL_syshaptic.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/haptic/dummy/SDL_syshaptic.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/joystick/SDL_gamecontroller.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/joystick/SDL_gamecontroller.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/joystick/SDL_joystick.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/joystick/SDL_joystick.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/joystick/android/SDL_sysjoystick.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/joystick/android/SDL_sysjoystick.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/loadso/dlopen/SDL_sysloadso.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/loadso/dlopen/SDL_sysloadso.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/power/SDL_power.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/power/SDL_power.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/power/android/SDL_syspower.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/power/android/SDL_syspower.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/SDL_d3dmath.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/SDL_d3dmath.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/SDL_render.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/SDL_render.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/SDL_yuv_mmx.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/SDL_yuv_mmx.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/SDL_yuv_sw.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/SDL_yuv_sw.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/direct3d/SDL_render_d3d.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/direct3d/SDL_render_d3d.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/direct3d11/SDL_render_d3d11.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/direct3d11/SDL_render_d3d11.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengl/SDL_render_gl.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengl/SDL_render_gl.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengl/SDL_shaders_gl.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengl/SDL_shaders_gl.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengles/SDL_render_gles.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengles/SDL_render_gles.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengles2/SDL_render_gles2.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengles2/SDL_render_gles2.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengles2/SDL_shaders_gles2.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/opengles2/SDL_shaders_gles2.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/psp/SDL_render_psp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/psp/SDL_render_psp.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_blendfillrect.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_blendfillrect.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_blendline.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_blendline.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_blendpoint.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_blendpoint.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_drawline.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_drawline.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_drawpoint.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_drawpoint.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_render_sw.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_render_sw.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_rotate.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/render/software/SDL_rotate.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_getenv.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_getenv.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_iconv.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_iconv.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_malloc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_malloc.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_qsort.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_qsort.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_stdlib.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_stdlib.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_string.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/stdlib/SDL_string.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_assert.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_assert.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_common.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_common.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_compare.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_compare.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_crc32.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_crc32.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_font.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_font.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_fuzzer.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_fuzzer.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_harness.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_harness.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imageBlit.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imageBlit.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imageBlitBlend.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imageBlitBlend.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imageFace.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imageFace.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imagePrimitives.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imagePrimitives.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imagePrimitivesBlend.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_imagePrimitivesBlend.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_log.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_log.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_md5.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_md5.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_random.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/test/SDL_test_random.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/SDL_thread.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/SDL_thread.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_syscond.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_syscond.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_sysmutex.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_sysmutex.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_syssem.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_syssem.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_systhread.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_systhread.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_systls.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/thread/pthread/SDL_systls.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/timer/SDL_timer.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/timer/SDL_timer.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/timer/unix/SDL_systimer.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/timer/unix/SDL_systimer.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_RLEaccel.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_RLEaccel.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_0.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_0.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_1.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_1.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_A.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_A.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_N.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_N.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_auto.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_auto.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_copy.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_copy.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_slow.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_blit_slow.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_bmp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_bmp.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_clipboard.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_clipboard.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_egl.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_egl.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_fillrect.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_fillrect.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_pixels.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_pixels.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_rect.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_rect.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_shape.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_shape.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_stretch.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_stretch.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_surface.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_surface.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_video.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/SDL_video.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidclipboard.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidclipboard.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidevents.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidevents.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidgl.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidgl.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidkeyboard.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidkeyboard.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidmessagebox.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidmessagebox.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidmouse.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidmouse.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidtouch.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidtouch.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidvideo.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidvideo.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidwindow.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2/src/video/android/SDL_androidwindow.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_bmp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_bmp.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_gif.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_gif.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_jpg.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_jpg.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_lbm.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_lbm.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_pcx.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_pcx.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_png.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_png.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_pnm.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_pnm.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_tga.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_tga.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_tif.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_tif.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_webp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_webp.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_xcf.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_xcf.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_xpm.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_xpm.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_xv.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_xv.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_xxx.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/IMG_xxx.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/png.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/png.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngerror.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngerror.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngget.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngget.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngmem.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngmem.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngpread.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngpread.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngread.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngread.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngrio.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngrio.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngrtran.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngrtran.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngrutil.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngrutil.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngset.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngset.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngtrans.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngtrans.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngwio.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngwio.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngwrite.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngwrite.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngwtran.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngwtran.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngwutil.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_image/external/libpng-1.6.2/pngwutil.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/SDL_ttf.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/SDL_ttf.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/autofit/autofit.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/autofit/autofit.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftbase.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftbase.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftbbox.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftbbox.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftbdf.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftbdf.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftbitmap.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftbitmap.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftcid.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftcid.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftdebug.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftdebug.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftfstype.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftfstype.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftgasp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftgasp.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftglyph.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftglyph.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftgxval.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftgxval.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftinit.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftinit.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftlcdfil.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftlcdfil.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftmm.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftmm.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftotval.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftotval.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftpatent.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftpatent.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftpfr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftpfr.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftstroke.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftstroke.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftsynth.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftsynth.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftsystem.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftsystem.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/fttype1.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/fttype1.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftwinfnt.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftwinfnt.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftxf86.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/base/ftxf86.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/bdf/bdf.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/bdf/bdf.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/bzip2/ftbzip2.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/bzip2/ftbzip2.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/cache/ftcache.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/cache/ftcache.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/cff/cff.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/cff/cff.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/cid/type1cid.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/cid/type1cid.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/gzip/ftgzip.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/gzip/ftgzip.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/lzw/ftlzw.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/lzw/ftlzw.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/pcf/pcf.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/pcf/pcf.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/pfr/pfr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/pfr/pfr.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/psaux/psaux.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/psaux/psaux.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/pshinter/pshinter.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/pshinter/pshinter.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/psnames/psmodule.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/psnames/psmodule.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/raster/raster.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/raster/raster.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/sfnt/sfnt.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/sfnt/sfnt.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/smooth/smooth.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/smooth/smooth.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/tools/apinames.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/tools/apinames.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/truetype/truetype.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/truetype/truetype.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/type1/type1.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/type1/type1.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/type42/type42.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/type42/type42.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/winfonts/winfnt.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/SDL2_ttf/external/freetype-2.4.12/src/winfonts/winfnt.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/Game.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/Game.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/__/SDL2/src/main/android/SDL_android_main.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/__/SDL2/src/main/android/SDL_android_main.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/ball.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/ball.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/border.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/border.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/brick.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/brick.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/brickmanager.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/brickmanager.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/button.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/button.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/buttonmanager.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/buttonmanager.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/collision.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/collision.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/game.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/game.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/main.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/main.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/mapbrick.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/mapbrick.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/player.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/player.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/rectangle.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/rectangle.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/render.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/render.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/scoresysytem.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/scoresysytem.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/state.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/state.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/state/maingamestate.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/state/maingamestate.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/state/mainmenustate.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/state/mainmenustate.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/state/pausestate.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/state/pausestate.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/statemachine.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/statemachine.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/text.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/text.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/time.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/obj/local/x86/objs/main/time.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/buttons/buttonExit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/buttons/buttonMenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/buttons/buttonPauseIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/buttons/buttonResume.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/buttons/buttonSettings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/buttons/buttonStart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/buttons/button_template.xcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/config/score.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/fonts/pixel.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/ball.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/base_background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/brick_green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/brick_red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/brick_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/pipe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/player.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/images/scoreboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/maps/map1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/maps/map2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/maps/map3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/maps/map4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/maps/map5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/pixelart/background_base.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/pixelart/greenbricktemplate.xcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/pixelart/pipe_template.xcf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/bin/app-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app-debug.apk" afterPath="$PROJECT_DIR$/bin/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app.ap_" afterPath="$PROJECT_DIR$/bin/app.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes.dex" afterPath="$PROJECT_DIR$/bin/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/app/game/ArkanoidSDLActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/app/game/ArkanoidSDLActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/app/game/R$string.class" afterPath="$PROJECT_DIR$/bin/classes/com/app/game/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/app/game/R.class" afterPath="$PROJECT_DIR$/bin/classes/com/app/game/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/armeabi-v7a/libmain.so" afterPath="$PROJECT_DIR$/libs/armeabi-v7a/libmain.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/libmain.so" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/libmain.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/ball.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/ball.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/brick.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/brick.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/brickmanager.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/brickmanager.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/buttonmanager.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/buttonmanager.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/game.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/game.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/main.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/main.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/mapbrick.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/mapbrick.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/player.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/player.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/rectangle.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/rectangle.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/render.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/render.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/scoresysytem.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/scoresysytem.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/maingamestate.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/maingamestate.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/mainmenustate.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/mainmenustate.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/pausestate.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/pausestate.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/text.o" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/text.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/bin/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app-debug-unaligned.apk.d" afterPath="$PROJECT_DIR$/bin/app-debug-unaligned.apk.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app.ap_.d" afterPath="$PROJECT_DIR$/bin/app.ap_.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/build.prop" afterPath="$PROJECT_DIR$/bin/build.prop" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/proguard.txt" afterPath="$PROJECT_DIR$/bin/proguard.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/R.java.d" afterPath="$PROJECT_DIR$/gen/R.java.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/app/game/R.java" afterPath="$PROJECT_DIR$/gen/com/app/game/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/Application.mk" afterPath="$PROJECT_DIR$/jni/Application.mk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/ball.cpp" afterPath="$PROJECT_DIR$/jni/src/ball.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/brick.cpp" afterPath="$PROJECT_DIR$/jni/src/brick.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/buttonmanager.cpp" afterPath="$PROJECT_DIR$/jni/src/buttonmanager.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/game.cpp" afterPath="$PROJECT_DIR$/jni/src/game.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/ball.h" afterPath="$PROJECT_DIR$/jni/src/include/ball.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/brick.h" afterPath="$PROJECT_DIR$/jni/src/include/brick.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/buttonmanager.h" afterPath="$PROJECT_DIR$/jni/src/include/buttonmanager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/game.h" afterPath="$PROJECT_DIR$/jni/src/include/game.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/mapbrick.h" afterPath="$PROJECT_DIR$/jni/src/include/mapbrick.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/rectangle.h" afterPath="$PROJECT_DIR$/jni/src/include/rectangle.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/render.h" afterPath="$PROJECT_DIR$/jni/src/include/render.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/scoresysytem.h" afterPath="$PROJECT_DIR$/jni/src/include/scoresysytem.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/state/maingamestate.h" afterPath="$PROJECT_DIR$/jni/src/include/state/maingamestate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/state/mainmenustate.h" afterPath="$PROJECT_DIR$/jni/src/include/state/mainmenustate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/state/pausestate.h" afterPath="$PROJECT_DIR$/jni/src/include/state/pausestate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/include/text.h" afterPath="$PROJECT_DIR$/jni/src/include/text.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/main.cpp" afterPath="$PROJECT_DIR$/jni/src/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/mapbrick.cpp" afterPath="$PROJECT_DIR$/jni/src/mapbrick.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/player.cpp" afterPath="$PROJECT_DIR$/jni/src/player.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/rectangle.cpp" afterPath="$PROJECT_DIR$/jni/src/rectangle.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/render.cpp" afterPath="$PROJECT_DIR$/jni/src/render.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/scoresysytem.cpp" afterPath="$PROJECT_DIR$/jni/src/scoresysytem.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/state/maingamestate.cpp" afterPath="$PROJECT_DIR$/jni/src/state/maingamestate.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/state/mainmenustate.cpp" afterPath="$PROJECT_DIR$/jni/src/state/mainmenustate.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/state/pausestate.cpp" afterPath="$PROJECT_DIR$/jni/src/state/pausestate.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jni/src/text.cpp" afterPath="$PROJECT_DIR$/jni/src/text.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/ball.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/ball.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/brick.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/brick.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/brickmanager.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/brickmanager.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/button.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/button.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/buttonmanager.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/buttonmanager.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/collision.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/collision.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/game.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/game.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/main.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/main.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/mapbrick.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/mapbrick.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/player.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/player.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/rectangle.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/rectangle.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/render.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/render.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/scoresysytem.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/scoresysytem.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/maingamestate.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/maingamestate.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/mainmenustate.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/mainmenustate.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/pausestate.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/state/pausestate.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/text.o.d" afterPath="$PROJECT_DIR$/obj/local/armeabi-v7a/objs/main/text.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/app/game/ArkanoidSDLActivity.java" afterPath="$PROJECT_DIR$/src/com/app/game/ArkanoidSDLActivity.java" />
+    </list>
+    <ignored path="SDL_arkanoid_android.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="SDL_arkanoid_android" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="file.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jni/src/file.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Android.mk" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jni/src/Android.mk">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collision.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jni/src/collision.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/jni/src/file.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="30" />
+    <option name="width" value="1680" />
+    <option name="height" value="1020" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SDL_arkanoid_android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SDL_arkanoid_android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SDL_arkanoid_android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SDL_arkanoid_android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SDL_arkanoid_android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SDL_arkanoid_android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SDL_arkanoid_android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Native" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Native" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a97d3fd9-61c6-46e7-bcf4-8452f2d071da" name="Default" comment="" />
+      <created>1502367720945</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1502367720945</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="30" width="1680" height="1020" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24924563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20760411" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jni/src/Android.mk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jni/src/collision.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jni/src/file.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

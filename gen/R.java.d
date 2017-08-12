@@ -1,7 +1,6 @@
 /home/marcin/Documents/SDL_arkanoid_android/gen/com/app/game/R.java \
  : /home/marcin/Documents/SDL_arkanoid_android/res/drawable-xxhdpi/ic_launcher.png \
 /home/marcin/Documents/SDL_arkanoid_android/res/values/strings.xml \
-/home/marcin/Documents/SDL_arkanoid_android/res/layout/main.xml \
 /home/marcin/Documents/SDL_arkanoid_android/res/drawable-xhdpi/ic_launcher.png \
 /home/marcin/Documents/SDL_arkanoid_android/res/drawable-hdpi/ic_launcher.png \
 /home/marcin/Documents/SDL_arkanoid_android/res/drawable-mdpi/ic_launcher.png \

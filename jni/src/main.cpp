@@ -1,5 +1,5 @@
 #include "include/game.h"
-#include "include/logsdlerror.h"
+#include "include/logerror.h"
 
 #include <SDL.h>
 
@@ -16,19 +16,19 @@ int main(int argv, char ** args) {
 
     if (!game.InitSDL()) {
 
-        LogSDLError(std::cout, "InitSDL");
+        PrintError("InitSDL");
         return 1;
     }
 
     if (!game.InitGame()) {
 
-        LogSDLError(std::cout, "InitGame");
+        PrintError("InitGame");
         return 1;
     }
 
     if (!game.InitStates()) {
 
-        LogSDLError(std::cout, "InitStates");
+        PrintError("InitStates");
         return 1;
     }
 
@@ -36,20 +36,3 @@ int main(int argv, char ** args) {
 
     return 0;
 }
-
-//#include <iostream>
-//#include <sstream>
-
-//int main () {
-
-//    std::string line = "1 2 3 4 5";
-//    std::string type;
-//    std::stringstream stream;
-//    stream << line;
-
-//    while (stream >> type) {
-//        std::cout << type << std::endl;
-//    }
-
-//    return 0;
-//}

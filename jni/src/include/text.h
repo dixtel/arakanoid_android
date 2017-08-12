@@ -6,12 +6,11 @@
 
 #include "include/rectangle.h"
 #include "include/vector2.h"
-#include "include/logsdlerror.h"
+#include "include/logerror.h"
 #include "include/CleanUp.h"
 
 #include <string>
 
-//TODO Memory lost somewhere here.
 
 class Text {
 

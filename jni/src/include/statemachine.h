@@ -27,6 +27,7 @@ public:
     void RenderScene();
     void Change(const stateType stateName);
     void Add(const stateType stateName, State *state);
+    void DeleteStates();
     bool IsGameExit();
 };
 

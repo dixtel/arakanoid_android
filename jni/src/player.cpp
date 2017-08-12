@@ -3,9 +3,9 @@
 Player::Player() {
 
     velocity    = 0;
-    speed       = 200;
-    maxSpeed    = 200;
-    friction    = 160;
+    speed       = 230;
+    maxSpeed    = 260;
+    friction    = 195;
 
     init        = false;
     moveRight   = false;
@@ -16,7 +16,7 @@ bool Player::Init(Vector2 <float> position, Vector2 <unsigned> size, const std::
 
     if (!player.SetTexture(pathTexture, ren)) {
 
-        LogSDLError(std::cout, "SetTexture");
+        PrintError("SetTexture");
         return false;
     }
 

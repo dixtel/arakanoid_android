@@ -5,10 +5,11 @@
 
 #include "include/vector2.h"
 #include "include/brickmanager.h"
+#include "include/logerror.h"
+#include "include/file.h"
 
 #include <string>
 #include <iostream>
-#include <fstream>
 #include <sstream>
 #include <vector>
 
@@ -31,6 +32,7 @@ public:
     MapBrick();
 
     void Init(Vector2 <float> startPosition, const int brick_w, const int brick_h, const int space_w, const int space_h);
+    void Clear();
     bool LoadMap(const std::string path);
 
     std::vector <BrickPattern> GetBricksPatterns();

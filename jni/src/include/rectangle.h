@@ -6,7 +6,7 @@
 #include <iostream>
 
 #include "include/vector2.h"
-#include "include/logsdlerror.h"
+#include "include/logerror.h"
 #include "include/CleanUp.h"
 
 

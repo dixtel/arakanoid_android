@@ -24,7 +24,7 @@
   jni/SDL2/include/SDL_version.h jni/src/include/rectangle.h \
   jni/SDL2_image/SDL_image.h \
   /home/marcin/linux_android_sdlwiki/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream \
-  jni/src/include/vector2.h jni/src/include/logsdlerror.h \
+  jni/src/include/vector2.h jni/src/include/logerror.h \
   jni/src/include/CleanUp.h \
   /home/marcin/linux_android_sdlwiki/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/utility \
   jni/src/include/randomnumber.h \
@@ -128,7 +128,7 @@ jni/SDL2_image/SDL_image.h:
 
 jni/src/include/vector2.h:
 
-jni/src/include/logsdlerror.h:
+jni/src/include/logerror.h:
 
 jni/src/include/CleanUp.h:
 

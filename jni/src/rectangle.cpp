@@ -70,7 +70,7 @@ bool Rectangle::SetAlpha(u_int8_t a) {
 
     if (SDL_SetTextureAlphaMod(texture, a) != 0) {
 
-        LogSDLError(std::cout, "SDL_SetTextureAlphaMod alpha");
+        PrintError("SDL_SetTextureAlphaMod alpha");
         return false;
     }
 
@@ -88,7 +88,7 @@ bool Rectangle::SetTexture(const std::string texturePath, SDL_Renderer *ren) {
 
     if (texture == nullptr) {
 
-        LogSDLError(std::cout, "IMG_LoadTexture");
+        PrintError("IMG_LoadTexture, path:" + texturePath);
         return false;
     }
 

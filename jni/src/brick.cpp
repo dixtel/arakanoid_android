@@ -11,7 +11,7 @@ bool Brick::Init(Vector2 <float> position, Vector2 <unsigned> size, int health, 
     if (!brick.SetTexture(pathTexture, ren)) {
 
         std::cout << pathTexture << std::endl;
-        LogSDLError(std::cout, "SetTexture");
+        PrintError("SetTexture");
         return false;
     }
 

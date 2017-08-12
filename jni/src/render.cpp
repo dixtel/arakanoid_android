@@ -14,7 +14,7 @@ void Render::Draw(Rectangle *object) {
 
     if (SDL_RenderCopy(ren, object->GetTexture(), object->GetClip(), object->GetDestination()) != 0) {
 
-        LogSDLError(std::cout, "SDL_RenderCopy");
+        PrintError("SDL_RenderCopy");
     }
 }
 
@@ -30,7 +30,7 @@ void Render::Clear(int8_t r, int8_t g, int8_t b, int8_t a) {
 
     if (SDL_SetRenderDrawColor(ren, r, g, b, a) != 0) {
 
-        LogSDLError(std::cout, "SDL_SetRenderDrawColor");
+        PrintError("SDL_SetRenderDrawColor");
     }
     SDL_RenderClear(ren);
 }

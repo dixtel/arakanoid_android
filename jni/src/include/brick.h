@@ -5,7 +5,7 @@
 
 #include "include/rectangle.h"
 #include "include/vector2.h"
-#include "include/logsdlerror.h"
+#include "include/logerror.h"
 
 #include <string>
 

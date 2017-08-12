@@ -25,10 +25,11 @@
   jni/src/include/brick.h jni/src/include/rectangle.h \
   jni/SDL2_image/SDL_image.h \
   /home/marcin/linux_android_sdlwiki/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream \
-  jni/src/include/vector2.h jni/src/include/logsdlerror.h \
+  jni/src/include/vector2.h jni/src/include/logerror.h \
   jni/src/include/CleanUp.h \
   /home/marcin/linux_android_sdlwiki/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/utility \
-  jni/src/include/scoresysytem.h \
+  jni/src/include/scoresysytem.h jni/src/include/file.h \
+  jni/src/include/fileread.h jni/src/include/filewrite.h \
   /home/marcin/linux_android_sdlwiki/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/fstream \
   /home/marcin/linux_android_sdlwiki/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream \
   /home/marcin/linux_android_sdlwiki/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector
@@ -133,13 +134,19 @@ jni/SDL2_image/SDL_image.h:
 
 jni/src/include/vector2.h:
 
-jni/src/include/logsdlerror.h:
+jni/src/include/logerror.h:
 
 jni/src/include/CleanUp.h:
 
 /home/marcin/linux_android_sdlwiki/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/utility:
 
 jni/src/include/scoresysytem.h:
+
+jni/src/include/file.h:
+
+jni/src/include/fileread.h:
+
+jni/src/include/filewrite.h:
 
 /home/marcin/linux_android_sdlwiki/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/fstream:
 

@@ -9,6 +9,7 @@
 #include "include/buttonmanager.h"
 #include "include/text.h"
 #include "include/rectangle.h"
+#include "include/logerror.h"
 
 #include <iostream>
 #include <memory>
@@ -26,8 +27,8 @@ class MainMenuState : public State {
     unsigned       width;
     unsigned       height;
     bool           exitGame;
-    bool           mouseLeftClick;
-    Vector2 <int>  mousePosition;
+    bool           touchClick;
+    Vector2 <int>  touchPosition;
 
     void HandleEvent();
 public:

@@ -13,26 +13,27 @@ MainGameState::MainGameState(unsigned width, unsigned height, StateMachine *stat
     this->stateMachine = stateMachne;
     this->width        = width;
     this->height       = height;
+    touchClick         = false;
     winGame            = false;
     exitGame           = false;
     render             = new Render(ren);
 
+    // Inits
     if (!player.Init(Vector2 <float> (width / 2 - 75 / 2, height - (height/10)), Vector2 <unsigned> (75, 25), "res/images/player.png", ren)) {
 
         std::cout << "Error: Cannot init Player." << std::endl;
         stateMachne->Change(stateType::mainMenuState);
     }
 
-    if (!ball.Init(Vector2 <float> (width / 2 - 10, height - height / 6), 10, "res/images/ball.png", ren)) {
 
-        std::cout << "Error: Cannot init Ball." << std::endl;
+    if (!scoreSystem.Init("score.bin")) {
+
+        SDL_Log("Error: Cannot init ScoreSystem.");
         stateMachne->Change(stateType::mainMenuState);
     }
-    if (!scoreSystem.Init("res/config/score.txt")) {
 
-        std::cout << "Error: Cannot init ScoreSystem." << std::endl;
-        stateMachne->Change(stateType::mainMenuState);
-    }
+    ballManager.Init(10, "res/images/ball.png", ren);
+    ballManager.AddBall(Vector2 <float> (width / 2 - 10, height - height / 8));
 
     mapBrick.Init(Vector2 <float> (10, 190), brickManager.GetBrickSize().x, brickManager.GetBrickSize().y, 1, 1);
 
@@ -132,7 +133,8 @@ MainGameState::~MainGameState() {
 
 void MainGameState::HandleEvent() {
 
-    mouseLeftClick = false;
+    touchClick = false;
+
     SDL_Event event;
 
     while (SDL_PollEvent(&event)) {
@@ -142,45 +144,37 @@ void MainGameState::HandleEvent() {
             exitGame = true;
         }
 
-        if (event.type == SDL_MOUSEMOTION) {
+        if (event.type == SDL_FINGERMOTION) {
 
-            SDL_GetMouseState(&mousePosition.x, &mousePosition.y);
+            touchPosition.x = event.tfinger.x * width;
+            touchPosition.y = event.tfinger.y * height;
         }
 
-        if (event.type == SDL_MOUSEBUTTONDOWN) {
+        if (event.type == SDL_FINGERDOWN) {
 
-            if (event.button.button == SDL_BUTTON_LEFT) {
+            touchClick = true;
 
-                mouseLeftClick = true;
+            touchPosition.x = event.tfinger.x * width;
+            touchPosition.y = event.tfinger.y * height;
+
+            if (touchPosition.x < width / 2) {
+
+                player.MoveLeft(true);
+
             }
-        }
-
-        if (event.type == SDL_KEYDOWN) {
-
-            if (event.key.keysym.sym == SDLK_RIGHT) {
+            else {
 
                 player.MoveRight(true);
             }
-
-            if (event.key.keysym.sym == SDLK_LEFT) {
-
-                player.MoveLeft(true);
-            }
         }
 
-        if (event.type == SDL_KEYUP) {
+        if (event.type == SDL_FINGERUP) {
 
-            if (event.key.keysym.sym == SDLK_RIGHT) {
+            touchClick = false;
 
-                player.MoveRight(false);
-            }
-
-            if (event.key.keysym.sym == SDLK_LEFT) {
-
-                player.MoveLeft(false);
-            }
+            player.MoveLeft(false);
+            player.MoveRight(false);
         }
-
     }
 }
 
@@ -189,8 +183,8 @@ void MainGameState::Update(float elapsedTime) {
     HandleEvent();
 
     player.UpdatePhysics(elapsedTime);
-    ball.UpdatePhysics(elapsedTime);
-    buttonManager.Update(mousePosition, mouseLeftClick);
+    ballManager.UpdateBallsPhysics(elapsedTime);
+    buttonManager.Update(touchPosition, touchClick);
 
     if (buttonManager.IsLeftClick("PauseIcon")) {
 
@@ -204,57 +198,70 @@ void MainGameState::Update(float elapsedTime) {
         collision.SetCollision(&player, &border);
     }
 
-    if (collision.IsCollising(&ball, &border)) {
+    for (int i = 0; i < ballManager.GetBallNumber(); ++i) {
 
-        if (collision.IsCollising(&ball, border.GetDownLine())) {
+        if (collision.IsCollising(ballManager.GetBall(i), &border)) {
 
-            currentMapNumber = 0;
+            if (collision.IsCollising(ballManager.GetBall(i), border.GetDownLine())) {
+
+                ballManager.DeleteBall(ballManager.GetBall(i));
+
+                if (ballManager.GetBallNumber() <= 0) {
+
+                    currentMapNumber = 0;
+                    mapBrick.LoadMap(pathsToMaps[currentMapNumber]);
+                    brickManager.SetBricks(mapBrick.GetBricksPatterns(), render->GetRenderer());
+                    player.Reset();
+                    scoreSystem.ResetCurrentScore();
+                    ballManager.ResetBalls();
+
+                    ballManager.AddBall(Vector2 <float> (width / 2 - 10, height - height / 8));
+                }
+
+                break;
+            }
+
+            collision.SetCollision(ballManager.GetBall(i), &border);
+        }
+
+        if (collision.IsCollising(ballManager.GetBall(i), &player)) {
+
+            collision.SetCollision(ballManager.GetBall(i), &player);
+        }
+
+        if (collision.IsCollising(ballManager.GetBall(i), brickManager.GetBricks())) {
+
+            collision.SetCollision(ballManager.GetBall(i), brickManager.GetBricks());
+        }
+
+        if (brickManager.GetBricksNumber() <= 0) {
+
+            currentMapNumber++;
+
+            if (currentMapNumber >= numbersOfMaps) {
+
+                winGame = true;
+                currentMapNumber = 0;
+            }
+
+
             mapBrick.LoadMap(pathsToMaps[currentMapNumber]);
             brickManager.SetBricks(mapBrick.GetBricksPatterns(), render->GetRenderer());
-            ball.Reset();
             player.Reset();
-            scoreSystem.ResetCurrentScore();
+            ballManager.ResetBalls();
+            ballManager.AddBall(Vector2 <float> (width / 2 - 10, height - height / 8));
         }
-
-        collision.SetCollision(&ball, &border);
-    }
-
-    if (collision.IsCollising(&ball, &player)) {
-
-        collision.SetCollision(&ball, &player);
-    }
-
-    if (collision.IsCollising(&ball, brickManager.GetBricks())) {
-
-        collision.SetCollision(&ball, brickManager.GetBricks());
-    }
-
-    if (brickManager.GetBricksNumber() <= 0) {
-
-        currentMapNumber++;
-
-        if (currentMapNumber >= numbersOfMaps) {
-
-            winGame = true;
-            currentMapNumber = 0;
-        }
-
-
-        mapBrick.LoadMap(pathsToMaps[currentMapNumber]);
-        brickManager.SetBricks(mapBrick.GetBricksPatterns(), render->GetRenderer());
-        ball.Reset();
-        player.Reset();
     }
 
 
-    levelNumberText->SetText("Level " + to_string(currentMapNumber + 1));
-    currentPointsText->SetText("Points " + to_string(scoreSystem.GetCurrentScore()));
+    levelNumberText->SetText("Level "     + to_string(currentMapNumber + 1));
+    currentPointsText->SetText("Points "  + to_string(scoreSystem.GetCurrentScore()));
     bestPointsText->SetText("Best score " + to_string(scoreSystem.GetBestScore()));
     
 
     brickManager.Update(scoreSystem);
     player.UpdatePlayer();
-    ball.UpdateBall();
+    ballManager.UpdateBalls();
 }
 
 void MainGameState::RenderScene() {
@@ -265,12 +272,17 @@ void MainGameState::RenderScene() {
     render->Draw(&scoreboardImage);
     render->Draw(&pipeImage);
     render->Draw(player.Get());
-    render->Draw(ball.Get());
     render->Draw(brickManager.GetBricksRect());
     render->Draw(levelNumberText->Get());
     render->Draw(currentPointsText->Get());
     render->Draw(bestPointsText->Get());
     render->Draw(buttonManager.GetButtons());
+
+    for (int i = 0; i < ballManager.GetBallNumber(); ++i) {
+
+        render->Draw(ballManager.GetBall(i)->Get());
+    }
+
     render->Display();
 }
 
@@ -291,8 +303,8 @@ void MainGameState::OnExit() {
 
     std::cout << "Main game state on exit." << std::endl;
 
-    scoreSystem.ResetCurrentScore();
     scoreSystem.Save();
+    scoreSystem.ResetCurrentScore();
 }
 
 bool MainGameState::IsGameExit() {

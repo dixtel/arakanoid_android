@@ -5,7 +5,7 @@
 
 #include "include/rectangle.h"
 #include "include/vector2.h"
-#include "include/logsdlerror.h"
+#include "include/logerror.h"
 #include "include/randomnumber.h"
 
 #include <string>
@@ -36,7 +36,7 @@ protected:
 public:
 
     Ball();
-
+    // TODO refactor name radius...
     bool Init(Vector2 <float> pos, float radisu, const std::string pathTexture, SDL_Renderer *ren);
     void UpdatePhysics(float delta);
     void UpdateBall();

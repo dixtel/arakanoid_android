@@ -5,7 +5,7 @@ PauseState::PauseState(unsigned width, unsigned height, StateMachine *stateMachn
     this->stateMachine = stateMachne;
     this->width        = width;
     this->height       = height;
-    mouseLeftClick     = false;
+    touchClick         = false;
     render             = new Render(ren);
 
     if (!buttonManager.CreateButton("Resume", Vector2 <int> (80, 480), Vector2 <unsigned> (500, 100), "res/buttons/buttonResume.png", render->GetRenderer())) {
@@ -30,7 +30,7 @@ PauseState::PauseState(unsigned width, unsigned height, StateMachine *stateMachn
     baseBackgroundImage.SetClip();
 
 
-    pauseText = std::unique_ptr <Text> (new Text(ren));\
+    pauseText = std::unique_ptr <Text> (new Text(ren));
     pauseText->SetPosition(Vector2 <float> (200, 100));
     pauseText->SetSize(90);
     pauseText->SetColor(SDL_Color{255, 255, 255, 255});
@@ -48,22 +48,23 @@ PauseState::~PauseState() {
 
 void PauseState::HandleEvent() {
 
-    mouseLeftClick = false;
+    touchClick = false;
     SDL_Event event;
 
     while (SDL_PollEvent(&event)) {
 
-        if (event.type == SDL_MOUSEMOTION) {
+        if (event.type == SDL_FINGERMOTION) {
 
-            SDL_GetMouseState(&mousePosition.x, &mousePosition.y);
+            touchPosition.x = event.tfinger.x * width;
+            touchPosition.y = event.tfinger.y * height;
         }
 
-        if (event.type == SDL_MOUSEBUTTONDOWN) {
+        if (event.type == SDL_FINGERDOWN) {
 
-            if (event.button.button == SDL_BUTTON_LEFT) {
+            touchPosition.x = event.tfinger.x * width;
+            touchPosition.y = event.tfinger.y * height;
 
-                mouseLeftClick = true;
-            }
+            touchClick = true;
         }
     }
 }
@@ -72,7 +73,7 @@ void PauseState::Update(float elapsedTime) {
 
     HandleEvent();
 
-    buttonManager.Update(mousePosition, mouseLeftClick);
+    buttonManager.Update(touchPosition, touchClick);
 
     if (buttonManager.IsLeftClick("Resume")) {
 

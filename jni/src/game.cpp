@@ -1,5 +1,13 @@
 #include "include/game.h"
 
+template <typename T>
+std::string to_string(T value)
+{
+    std::ostringstream os ;
+    os << value ;
+    return os.str() ;
+}
+
 Game::Game(const unsigned SCREEN_WIDTH, const unsigned SCREEN_HEIGHT, const std::string SCREEN_TITLE) {
 
     this->SCREEN_WIDTH = SCREEN_WIDTH;
@@ -9,26 +17,41 @@ Game::Game(const unsigned SCREEN_WIDTH, const unsigned SCREEN_HEIGHT, const std:
 
 Game::~Game() {
 
-    SDL_DestroyWindow(win);
-    SDL_DestroyRenderer(ren);
-
-    delete stateMachine;
-    stateMachine = nullptr;
 }
 
 bool Game::InitGame() {
 
-    win = SDL_CreateWindow(SCREEN_TITLE.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
-    ren = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-
-    //SDL_RenderSetScale(ren, ;
-
-    stateMachine = new StateMachine();
+    win = SDL_CreateWindow(SCREEN_TITLE.c_str(), SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_FULLSCREEN);
+    ren = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC | SDL_RENDERER_TARGETTEXTURE);
 
     if (win == nullptr || ren == nullptr) {
-        LogSDLError(std::cout, "SDL_CreateWindow, SDL_CreateRenderer");
+
+        PrintError("SDL_CreateWindow, SDL_CreateRenderer");
         return false;
     }
+
+    SDL_DisplayMode display;
+
+    if (SDL_GetCurrentDisplayMode(0, &display) != 0) {
+
+        PrintError("SDL_GetCurrentDisplayMode");
+        return false;
+    }
+
+    float scalex = 1 + (float(display.w - SCREEN_WIDTH) / SCREEN_WIDTH);
+    float scaley = 1 + (float(display.h - SCREEN_HEIGHT) / SCREEN_HEIGHT);
+
+    PrintError(to_string(scalex) + " " + to_string(scaley));
+
+    if (SDL_RenderSetScale(ren, scalex, scaley) != 0) {
+
+        PrintError("SDL_RenderSetLogicalSize");
+        return false;
+    }
+
+    SDL_Log("%s %s", "PATH PRF:", SDL_GetPrefPath("My Company", "Arkanoid"));
+
+    stateMachine = new StateMachine();
 
     return true;
 }
@@ -36,17 +59,23 @@ bool Game::InitGame() {
 bool Game::InitSDL() {
 
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
-        LogSDLError(std::cout, "SDL_Init");
+
+        PrintError("SDL_Init");
         return false;
     }
 
     if (IMG_Init(IMG_INIT_PNG | IMG_INIT_JPG) != (IMG_INIT_PNG | IMG_INIT_JPG)) {
-        LogSDLError(std::cout, "IMG_Init");
+
+        PrintError("IMG_Init");
+        SDL_Quit();
         return false;
     }
 
     if (TTF_Init() != 0) {
-        LogSDLError(std::cout, "TTF_Init");
+
+        PrintError("TTF_Init");
+        SDL_Quit();
+        IMG_Quit();
         return false;
     }
 
@@ -55,7 +84,7 @@ bool Game::InitSDL() {
 
 bool Game::InitStates() {
 
-    stateMachine->Add(stateType::pauseState, new PauseState(SCREEN_WIDTH, SCREEN_HEIGHT, stateMachine, ren));
+    stateMachine->Add(stateType::pauseState,    new PauseState(SCREEN_WIDTH, SCREEN_HEIGHT, stateMachine, ren));
     stateMachine->Add(stateType::mainMenuState, new MainMenuState(SCREEN_WIDTH, SCREEN_HEIGHT, stateMachine, ren));
     stateMachine->Add(stateType::mainGameState, new MainGameState(SCREEN_WIDTH, SCREEN_HEIGHT, stateMachine, ren));
 
@@ -71,6 +100,7 @@ void Game::Start() {
     float elapsedTime = 0;
 
     while (true) {
+
         elapsedTime = time.GetTicks() / 1000;
         time.StartTicks();
 
@@ -82,6 +112,17 @@ void Game::Start() {
             break;
         }
     }
+
+    Quit();
+}
+
+void Game::Quit() {
+
+    delete stateMachine;
+    stateMachine = nullptr;
+
+    SDL_DestroyWindow(win);
+    SDL_DestroyRenderer(ren);
 
     SDL_Quit();
     IMG_Quit();

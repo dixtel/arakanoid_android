@@ -4,7 +4,7 @@
 #include <SDL.h>
 
 #include "include/rectangle.h"
-#include "include/logsdlerror.h"
+#include "include/logerror.h"
 
 
 #include <vector>

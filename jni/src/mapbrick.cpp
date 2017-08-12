@@ -1,5 +1,13 @@
 #include "include/mapbrick.h"
 
+template <typename T>
+std::string to_string(T value)
+{
+    std::ostringstream os ;
+    os << value ;
+    return os.str() ;
+}
+
 MapBrick::MapBrick() {
 
     brick_w = 0;
@@ -46,22 +54,27 @@ void MapBrick::Init(Vector2 <float> startPosition, const int brick_w, const int 
     this->space_h = space_h;
 }
 
+void MapBrick::Clear() {
+
+    brickPatterns.clear();
+    bricksMap.clear();
+}
+
 bool MapBrick::LoadMap(const std::string path) {
 
-    std::ifstream file;
-    file.open(path);
+    Clear();
 
-    if (!file.is_open()) {
+    File file(path);
 
-        return false;
-    }
+    std::string data = file.GetData();
 
-    bricksMap.clear();
-    brickPatterns.clear();
+    std::stringstream stream;
+    stream << data;
 
     std::string line;
     int type;
-    while (std::getline(file, line)) {
+
+    while (std::getline(stream, line)) {
 
         std::vector <BrickType> rowBricks;
 

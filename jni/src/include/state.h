@@ -5,14 +5,16 @@ class State {
 
 public:
 
-    State();
-    virtual ~State();
+    State() {};
+    virtual ~State() {};
+    virtual void Update(float elapsedTime) {};
+    virtual void RenderScene() {};
+    virtual void OnEnter() {};
+    virtual void OnExit() {};
+    virtual bool IsGameExit() {
 
-    virtual void Update(float elapsedTime) = 0;
-    virtual void RenderScene() = 0;
-    virtual void OnEnter() = 0;
-    virtual void OnExit() = 0;
-    virtual bool IsGameExit();
+		return false;
+    }
 };
 
 #endif // STATE_H

@@ -9,24 +9,15 @@ Text::Text(SDL_Renderer *ren) {
 
 Text::~Text() {
 
-    TTF_CloseFont(font);
-}
-
-void Text::Update() {
-
     if (font != nullptr) {
 
         TTF_CloseFont(font);
     }
 
-    font = TTF_OpenFont(pathToFont.c_str(), size);
+    ren = nullptr;
+}
 
-    if (font == nullptr) {
-
-
-        LogSDLError(std::cout, "TTF_OpenFont");
-        return;
-    }
+void Text::Update() {
 
     SDL_Surface *surface = TTF_RenderText_Solid(font, text.c_str(), color);
     SDL_Texture *texture = SDL_CreateTextureFromSurface(ren, surface);
@@ -57,7 +48,19 @@ void Text::SetText(const std::string text) {
 void Text::SetSize(unsigned size) {
 
     this->size = size;
-    isChanged = true;
+
+    if (font != nullptr) {
+
+        TTF_CloseFont(font);
+    }
+
+    font = TTF_OpenFont(pathToFont.c_str(), size);
+
+    if (font == nullptr) {
+
+        PrintError("TTF_OpenFont");
+        return;
+    }
 }
 
 void Text::SetColor(SDL_Color color) {
@@ -69,7 +72,21 @@ void Text::SetColor(SDL_Color color) {
 void Text::SetFont(std::string pathToFont) {
 
     this->pathToFont = pathToFont;
-    isChanged = true;
+
+    if (font != nullptr) {
+
+        TTF_CloseFont(font);
+    }
+
+    font = TTF_OpenFont(pathToFont.c_str(), size);
+
+    if (font == nullptr) {
+
+        PrintError("TTF_OpenFont");
+        return;
+    }
+
+    Update();
 }
 
 Rectangle *Text::Get() {

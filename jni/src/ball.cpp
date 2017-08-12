@@ -22,7 +22,7 @@ bool Ball::Init(Vector2 <float> pos, float radius, const std::string pathTexture
 
     if (!ball.SetTexture(pathTexture, ren)) {
 
-        LogSDLError(std::cout, "SetTexture");
+        PrintError("SetTexture");
         return false;
     }
 
@@ -133,5 +133,3 @@ Rectangle *Ball::Get() {
 
     return &ball;
 }
-
-

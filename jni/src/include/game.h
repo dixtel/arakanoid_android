@@ -6,7 +6,7 @@
 #include <SDL_ttf.h>
 
 #include "include/statemachine.h"
-#include "include/logsdlerror.h"
+#include "include/logerror.h"
 #include "include/state/maingamestate.h"
 #include "include/state/mainmenustate.h"
 #include "include/state/pausestate.h"
@@ -36,6 +36,7 @@ public:
     bool InitStates();
 
     void Start();
+    void Quit();
 };
 
 #endif // GAME_H

@@ -4,6 +4,7 @@
 #include <SDL.h>
 
 #include "include/brick.h"
+#include "include/file.h"
 
 #include <string>
 #include <fstream>
@@ -17,8 +18,7 @@ class ScoreSystem {
     void IncreaseCurrentScore(BrickType type);
 
 protected:
-
-    std::string pathToScoreFile;
+    std::string scoreFile;
 
     unsigned bestScore;
     unsigned currentScore;
@@ -30,7 +30,7 @@ public:
     ScoreSystem();
     ~ScoreSystem();
 
-    bool Init(std::string pathToScoreFile);
+    bool Init(std::string scoreFile);
     void ResetCurrentScore();
     void Save();
 

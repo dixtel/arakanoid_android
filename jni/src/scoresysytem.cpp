@@ -27,8 +27,8 @@ ScoreSystem::ScoreSystem() {
 ScoreSystem::~ScoreSystem() {
 
     if (!SaveBestScore()) {
-
-        std::cout << "Error: Cannot save bestscore (ScoreSystem)" << std::endl;
+        
+        SDL_Log("Error: Cannot save bestscore (ScoreSystem)");
     }
 }
 
@@ -55,27 +55,25 @@ void ScoreSystem::IncreaseCurrentScore(BrickType type) {
 
 bool ScoreSystem::LoadBestScore() {
 
-    std::fstream file;
+    const char *base_path = SDL_AndroidGetInternalStoragePath();
 
-    file.open(pathToScoreFile.c_str(), std::fstream::in);
+    std::string final_path;
 
-    if (!file.is_open()) {
+    final_path.append(base_path);
+    final_path.append("/");
+    final_path.append(scoreFile);
 
-        return false;
-    }
+    File file(final_path);
 
-    std::string line;
+    std::string line = file.GetData();
 
-    while (std::getline(file, line)) {
+    if (line.find("bestscore:") != std::string::npos) {
 
-        if (line.find("bestscore:") != std::string::npos) {
+        std::string score = line.substr((line.find("bestscore:") + 10), line.size() -  10);
 
-            std::string score = line.substr((line.find("bestscore:") + 10), line.size() -  10);
+        bestScore = ToInt(score);
 
-            bestScore = ToInt(score);
-
-            return true;
-        }
+        return true;
     }
 
     return false;
@@ -83,20 +81,28 @@ bool ScoreSystem::LoadBestScore() {
 
 bool ScoreSystem::SaveBestScore() {
 
+   const char *base_path = SDL_AndroidGetInternalStoragePath();
 
-    std::remove(pathToScoreFile.c_str());
+    std::string final_path;
 
-    std::ofstream file(pathToScoreFile.c_str());
+    final_path.append(base_path);
+    final_path.append("/");
+    final_path.append(scoreFile);
 
-    file << "bestscore:" + to_string(bestScore);
+    File file(final_path);
+
+    if (!file.WriteData("bestscore:" + to_string(bestScore))) {
+
+        return false;
+    }
 
     return true;
 }
 
 
-bool ScoreSystem::Init(std::string pathToScoreFile) {
+bool ScoreSystem::Init(std::string scoreFile) {
 
-    this->pathToScoreFile = pathToScoreFile;
+    this->scoreFile = scoreFile;
 
     if (!LoadBestScore()) {
 
@@ -113,9 +119,12 @@ void ScoreSystem::ResetCurrentScore() {
 
 void ScoreSystem::Save() {
 
-    if (!SaveBestScore()) {
+    if (currentScore >= bestScore) {
 
-        std::cout << "Error: Cannot save bestscore (ScoreSystem)" << std::endl;
+        if (!SaveBestScore()) {
+
+            SDL_Log("Error: Cannot save bestscore (ScoreSystem)");
+        }
     }
 }
 

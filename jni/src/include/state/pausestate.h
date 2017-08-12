@@ -21,11 +21,11 @@ class PauseState : public State {
     std::unique_ptr <Text> pauseText;
     Rectangle              baseBackgroundImage;
 
-    unsigned width;
-    unsigned height;
+    unsigned               width;
+    unsigned               height;
 
-    bool mouseLeftClick;
-    Vector2 <int> mousePosition;
+    bool                   touchClick;
+    Vector2 <int>          touchPosition;
 
     void HandleEvent();
 public:
