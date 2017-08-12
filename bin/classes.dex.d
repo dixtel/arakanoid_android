@@ -32,4 +32,3 @@
 /home/marcin/Documents/SDL_arkanoid_android/bin/classes/org/libsdl/app/BuildConfig.class \
 /home/marcin/Documents/SDL_arkanoid_android/bin/classes/org/libsdl/app/R.class \
 /home/marcin/Documents/SDL_arkanoid_android/bin/classes/org/libsdl/app/DummyEdit.class \
-/home/marcin/Documents/SDL_arkanoid_android/bin/dexedLibs/annotations-7c5a05cbad5c8bc34fb7b29803d0a439.jar \

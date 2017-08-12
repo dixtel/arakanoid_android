@@ -21,10 +21,7 @@
   jni/SDL2/include/SDL_loadso.h jni/SDL2/include/SDL_log.h \
   jni/SDL2/include/SDL_messagebox.h jni/SDL2/include/SDL_power.h \
   jni/SDL2/include/SDL_render.h jni/SDL2/include/SDL_system.h \
-  jni/SDL2/include/SDL_timer.h jni/SDL2/include/SDL_version.h \
-  jni/SDL2_image/external/jpeg-9/jpeglib.h \
-  jni/SDL2_image/external/jpeg-9/jconfig.h \
-  jni/SDL2_image/external/jpeg-9/jmorecfg.h
+  jni/SDL2/include/SDL_timer.h jni/SDL2/include/SDL_version.h
 
 jni/SDL2_image/SDL_image.h:
 
@@ -115,9 +112,3 @@ jni/SDL2/include/SDL_system.h:
 jni/SDL2/include/SDL_timer.h:
 
 jni/SDL2/include/SDL_version.h:
-
-jni/SDL2_image/external/jpeg-9/jpeglib.h:
-
-jni/SDL2_image/external/jpeg-9/jconfig.h:
-
-jni/SDL2_image/external/jpeg-9/jmorecfg.h:

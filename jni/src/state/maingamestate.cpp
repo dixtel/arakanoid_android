@@ -214,7 +214,6 @@ void MainGameState::Update(float elapsedTime) {
                     player.Reset();
                     scoreSystem.ResetCurrentScore();
                     ballManager.ResetBalls();
-
                     ballManager.AddBall(Vector2 <float> (width / 2 - 10, height - height / 8));
                 }
 
